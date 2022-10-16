@@ -1,4 +1,3 @@
-@staticmethod
 def search_insert(nums, target):
     """
     :type nums: List[int]
@@ -30,3 +29,8 @@ def search_insert(nums, target):
             start = m + 1
         else:
             end = m - 1
+
+if __name__ == "__main__":
+    nums: list = range(50)
+    target: int = 67
+    print(f"index of {target}= {search_insert(nums, target)}")
