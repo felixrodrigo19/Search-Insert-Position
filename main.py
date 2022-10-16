@@ -35,7 +35,8 @@ def search_insert(nums, target):
             end = m - 1
 
 if __name__ == "__main__":
-    nums: list = random.sample(range(100), 100)
+    nums: list = sorted(random.sample(range(200), 100))
+    print(nums)
     try:
         target: int = int(input('Insert the target(integer): '))
         print(f"index of {target}= {search_insert(nums, target)}")
